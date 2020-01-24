@@ -7,8 +7,6 @@ const apiManager = {
     searchBusStops(searchCriteria) {
         const criteria = encodeURIComponent(`"%${searchCriteria.toUpperCase()}%"`);
         const url = apiBaseUrl + `$where=route_name like ${criteria}`;
-        return fetch(url).then(resp => resp.json()); 
-
-
+        return fetch(url).then(resp => resp.json());
     }
 };

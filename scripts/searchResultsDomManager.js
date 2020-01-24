@@ -7,10 +7,10 @@ const searchResultsDomManager = {
          </section>        
          `
     },
- renderSearchResults(searchResults) {
-  const container = document.getElementById("searchResults");
-  searchResults.forEach(busStop => {
-      container.innerHTML += this.busStopFactory(busStop);
-  })
- }
+    renderSearchResults(searchResults) {
+        const container = document.getElementById("searchResults");
+        searchResults.forEach(busStop => {
+            container.innerHTML += this.busStopFactory(busStop);
+        })
+    }
 };
